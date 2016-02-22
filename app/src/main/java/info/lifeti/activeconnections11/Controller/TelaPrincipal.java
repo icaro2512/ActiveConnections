@@ -16,6 +16,7 @@ public class TelaPrincipal extends AppCompatActivity {
         /*
         TextView text = (TextView) findViewById(R.id.tTeste);
         text.setText("Funcionou");
+        yesjueue
         */
     }
 }
