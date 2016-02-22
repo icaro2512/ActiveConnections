@@ -1,0 +1,40 @@
+package info.lifeti.activeconnections11.Model;
+
+public class Bairro {
+    private Integer baiId;
+    private String baiNome;
+    private String baiAbrev;
+    private Cidade cid;
+
+    public Integer getBaiId() {
+        return baiId;
+    }
+
+    public void setBaiId(Integer baiId) {
+        this.baiId = baiId;
+    }
+
+    public String getBaiNome() {
+        return baiNome;
+    }
+
+    public void setBaiNome(String baiNome) {
+        this.baiNome = baiNome;
+    }
+
+    public String getBaiAbrev() {
+        return baiAbrev;
+    }
+
+    public void setBaiAbrev(String baiAbrev) {
+        this.baiAbrev = baiAbrev;
+    }
+
+    public Cidade getCid() {
+        return cid;
+    }
+
+    public void setCid(Cidade cid) {
+        this.cid = cid;
+    }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.lifeti.activeconnections11">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Controller.TelaLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Controller.TelaPrincipal" />
+        <activity android:name=".Controller.TelaOcorrencias" />
+        <activity android:name=".Controller.TelaOcorrenciaNewUpdate" />
+        <activity android:name=".Controller.TelaOcorrenciaComentarios" />
+        <activity android:name=".Controller.TelaOcorrenciaComentarioNewUpdate" />
+        <activity android:name=".Controller.TelaOcorrenciaServicos" />
+        <activity android:name=".Controller.TelaOcorrenciaServicoNewUpdate" />
+        <activity android:name=".Controller.TelaOcorrenciaServicoComentarioNU" />
+        <activity android:name=".Controller.TelaClientes" />
+        <activity android:name=".Controller.TelaCliente" />
+        <activity android:name=".Controller.TelaClienteInformacoes" />
+        <activity android:name=".Controller.TelaClienteLocalizacao" />
+        <activity android:name=".Controller.TelaClienteContato" />
+        <activity android:name=".Controller.TelaClienteEmail" />
+        <activity android:name=".Controller.TelaClienteTelefone" />
+        <activity android:name=".Controller.TelaClienteContatoTelEmail" />
+        <activity android:name=".Controller.TelaClienteContatoEndereco" />
+        <activity android:name=".Controller.TelaAuxTipoOcorrencia" />
+        <activity android:name=".Controller.TelaAuxListaClientes" />
+        <activity android:name=".Controller.TelaAuxListaUsuarios" />
+        <activity android:name=".Controller.TelaAuxListaFuncionario" />
+        <activity android:name=".Controller.TelaAuxListaContato" />
+        <activity android:name=".Controller.TelaAuxEditaObs" />
+        <activity android:name=".Controller.TelaAuxEditaLogo"></activity>
+    </application>
+
+</manifest>

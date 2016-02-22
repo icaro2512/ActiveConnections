@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Active Connections 1.1</string>
+    <string name="tUsuario">Usuário</string>
+    <string name="tSenha">Senha</string>
+    <string name="bNovo">Adicionar</string>
+    <string name="bEntrar">Login</string>
+    <string name="bOco">Ocorrência(s)</string>
+    <string name="bRel">Relatório(s)</string>
+    <string name="bConf">Configurações</string>
+    <string name="bSair">Sair</string>
+</resources>
