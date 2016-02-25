@@ -8,37 +8,43 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Controller.TelaLogin">
+        <activity android:name=".TelaLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Controller.TelaPrincipal" />
-        <activity android:name=".Controller.TelaOcorrencias" />
-        <activity android:name=".Controller.TelaOcorrenciaNewUpdate" />
-        <activity android:name=".Controller.TelaOcorrenciaComentarios" />
-        <activity android:name=".Controller.TelaOcorrenciaComentarioNewUpdate" />
-        <activity android:name=".Controller.TelaOcorrenciaServicos" />
-        <activity android:name=".Controller.TelaOcorrenciaServicoNewUpdate" />
-        <activity android:name=".Controller.TelaOcorrenciaServicoComentarioNU" />
-        <activity android:name=".Controller.TelaClientes" />
-        <activity android:name=".Controller.TelaCliente" />
-        <activity android:name=".Controller.TelaClienteInformacoes" />
-        <activity android:name=".Controller.TelaClienteLocalizacao" />
-        <activity android:name=".Controller.TelaClienteContato" />
-        <activity android:name=".Controller.TelaClienteEmail" />
-        <activity android:name=".Controller.TelaClienteTelefone" />
-        <activity android:name=".Controller.TelaClienteContatoTelEmail" />
-        <activity android:name=".Controller.TelaClienteContatoEndereco" />
-        <activity android:name=".Controller.TelaAuxTipoOcorrencia" />
-        <activity android:name=".Controller.TelaAuxListaClientes" />
-        <activity android:name=".Controller.TelaAuxListaUsuarios" />
-        <activity android:name=".Controller.TelaAuxListaFuncionario" />
-        <activity android:name=".Controller.TelaAuxListaContato" />
-        <activity android:name=".Controller.TelaAuxEditaObs" />
-        <activity android:name=".Controller.TelaAuxEditaLogo"></activity>
+        <activity android:name=".TelaPrincipal" />
+        <activity android:name=".TelaOcorrencias" />
+        <activity android:name=".TelaOcorrenciaNewUpdate" />
+        <activity android:name=".TelaOcorrenciaComentarios" />
+        <activity android:name=".TelaOcorrenciaComentarioNewUpdate" />
+        <activity android:name=".TelaOcorrenciaServicos" />
+        <activity android:name=".TelaOcorrenciaServicoNewUpdate" />
+        <activity android:name=".TelaOcorrenciaServicoComentarioNU" />
+        <activity android:name=".TelaCliente" />
+        <activity android:name=".TelaClientes" />
+        <activity android:name=".TelaClienteInformacoes" />
+        <activity android:name=".TelaClienteLocalizacao" />
+        <activity android:name=".TelaClienteContato" />
+        <activity android:name=".TelaClienteEmail" />
+        <activity android:name=".TelaClienteTelefone" />
+        <activity android:name=".TelaClienteContatoTelEmail" />
+        <activity android:name=".TelaClienteContatoEndereco" />
+        <activity android:name=".TelaAuxTipoOcorrencia" />
+        <activity android:name=".TelaAuxListaClientes" />
+        <activity android:name=".TelaAuxListaUsuarios" />
+        <activity android:name=".TelaAuxListaFuncionario" />
+        <activity android:name=".TelaAuxListaContato" />
+        <activity android:name=".TelaAuxEditaObs" />
+        <activity android:name=".TelaAuxEditaLogo"/>
+        <activity android:name=".TelaContatos"/>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

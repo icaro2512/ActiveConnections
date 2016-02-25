@@ -6,6 +6,13 @@ public class Bairro {
     private String baiAbrev;
     private Cidade cid;
 
+    public Bairro(Integer baiId, String valor) {
+        this.baiId = baiId;
+    }
+
+    public Bairro() {
+    }
+
     public Integer getBaiId() {
         return baiId;
     }
@@ -37,4 +44,7 @@ public class Bairro {
     public void setCid(Cidade cid) {
         this.cid = cid;
     }
+
+
+
 }

@@ -1,15 +1,15 @@
-package info.lifeti.activeconnections11.Controller;
+package info.lifeti.activeconnections11;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import info.lifeti.activeconnections11.R;
 
-public class TelaAuxTipoOcorrencia extends AppCompatActivity {
+public class TelaOcorrenciaComentarios extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_aux_tipo_ocorrencia);
+        setContentView(R.layout.activity_tela_ocorrencia_comentarios);
     }
 }

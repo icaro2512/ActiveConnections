@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Controller.TelaOcorrenciaNewUpdate"
+    tools:context=".TelaOcorrenciaNewUpdate"
     android:orientation="vertical">
 
     <LinearLayout
@@ -17,29 +17,47 @@
         android:textAlignment="center">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="New Text"
-            android:id="@+id/textView"
+            android:text="@string/tDtInicialOco"
+            android:id="@+id/tDtInicialOco"
             android:textAlignment="center"
-            android:layout_gravity="center" />
+            android:layout_weight="1"
+            android:gravity="center" />
 
-        <Spinner
-            android:layout_width="match_parent"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner"
+            android:text="@string/bDtInicialOco"
+            android:id="@+id/bDtInicialOco"
             android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
 
-        <DatePicker
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/tDtFinalOco"
+            android:id="@+id/tDtFinalOco"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/datePicker" />
+            android:text="@string/bDtFinalOco"
+            android:id="@+id/bDtFinalOco"
+            android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
+
+
 
 </LinearLayout>

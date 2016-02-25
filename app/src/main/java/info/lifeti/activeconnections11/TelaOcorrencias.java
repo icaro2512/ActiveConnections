@@ -1,4 +1,4 @@
-package info.lifeti.activeconnections11.Controller;
+package info.lifeti.activeconnections11;
 
 
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import info.lifeti.activeconnections11.R;
+import info.lifeti.activeconnections11.Adapters.OcorrenciasAdapter;
 
 public class TelaOcorrencias extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private ListView listView;

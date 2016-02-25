@@ -1,15 +1,16 @@
-package info.lifeti.activeconnections11.Controller;
+package info.lifeti.activeconnections11;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import info.lifeti.activeconnections11.R;
 
-public class TelaAuxListaClientes extends AppCompatActivity {
+public class TelaAuxTipoOcorrencia extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_aux_lista_clientes);
+        setContentView(R.layout.activity_tela_aux_tipo_ocorrencia);
     }
+
 }

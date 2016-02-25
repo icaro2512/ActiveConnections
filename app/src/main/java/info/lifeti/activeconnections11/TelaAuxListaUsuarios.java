@@ -1,4 +1,4 @@
-package info.lifeti.activeconnections11.Controller;
+package info.lifeti.activeconnections11;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package info.lifeti.activeconnections11.Controller;
+package info.lifeti.activeconnections11.Adapters;
 
 import android.content.Context;
 import android.view.View;
@@ -6,9 +6,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-/**
- * Created by Dragon on 20/02/2016.
- */
+
 public class OcorrenciasAdapter extends BaseAdapter {
     private String[] planetas = new String[] {"Mércurio","Vênus","Terra","Marte","Júpiter","Saturno",
             "Urano","Netuno","Plutão"};
