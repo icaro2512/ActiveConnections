@@ -25,4 +25,6 @@
     <string name="bDtInicialOco"><![CDATA[>]]></string>
     <string name="tDtFinalOco">Defina a data final...</string>
     <string name="bDtFinalOco"><![CDATA[>]]></string>
+    <string name="bNewUpdateOco">Nova Ocorrência</string>
+    <string name="testeWS">Testar Web Service</string>
 </resources>

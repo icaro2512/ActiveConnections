@@ -19,4 +19,10 @@ public class TelaLogin extends AppCompatActivity {
         Intent it = new Intent(context, TelaPrincipal.class);
         startActivity(it);
     }
+
+    public void testeWs(View v) {
+        final Context context = this;
+        Intent it = new Intent(context, TesteWS.class);
+        startActivity(it);
+    }
 }
