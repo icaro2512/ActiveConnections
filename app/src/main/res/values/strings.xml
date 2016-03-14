@@ -27,4 +27,13 @@
     <string name="bDtFinalOco"><![CDATA[>]]></string>
     <string name="bNewUpdateOco">Nova Ocorrência</string>
     <string name="testeWS">Testar Web Service</string>
+    <string name="listar">Lista Usuários</string>
+    <string name="telaLoginBoasVindas">Bem Vindo ao Active Connections</string>
+    <string name="statusWebService">Sem comunicação com o Web Service, verifique a sua conexão coma  Internet.</string>
+    <string name="voltar">Voltar</string>
+    <string name="tBoasVindas">Bem Vindo ao Active Connections</string>
+    <string name="tStatusWS">Falha na comunicação com o Web Service, verifique a sua conexão com a Internet e tente novamente.</string>
+    <string name="bAdicionarUsuario">Adicionar Usuário</string>
+    <string name="bVoltar">Voltar</string>
+    <string name="tAddUsuario">Preencha todos os campos abaixo para se cadastrar.</string>
 </resources>

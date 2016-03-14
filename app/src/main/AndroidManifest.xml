@@ -2,45 +2,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="info.lifeti.activeconnections11">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TelaLogin">
+        <activity android:name=".activity.TelaLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TelaPrincipal" />
-        <activity android:name=".TelaOcorrencias" />
-        <activity android:name=".TelaOcorrenciaNewUpdate" />
-        <activity android:name=".TelaOcorrenciaComentarios" />
-        <activity android:name=".TelaOcorrenciaComentarioNewUpdate" />
-        <activity android:name=".TelaOcorrenciaServicos" />
-        <activity android:name=".TelaOcorrenciaServicoNewUpdate" />
-        <activity android:name=".TelaOcorrenciaServicoComentarioNU" />
-        <activity android:name=".TelaCliente" />
-        <activity android:name=".TelaClientes" />
-        <activity android:name=".TelaClienteInformacoes" />
-        <activity android:name=".TelaClienteLocalizacao" />
-        <activity android:name=".TelaClienteContato" />
-        <activity android:name=".TelaClienteEmail" />
-        <activity android:name=".TelaClienteTelefone" />
-        <activity android:name=".TelaClienteContatoTelEmail" />
-        <activity android:name=".TelaClienteContatoEndereco" />
-        <activity android:name=".TelaAuxTipoOcorrencia" />
-        <activity android:name=".TelaAuxListaClientes" />
-        <activity android:name=".TelaAuxListaUsuarios" />
-        <activity android:name=".TelaAuxListaFuncionario" />
-        <activity android:name=".TelaAuxListaContato" />
-        <activity android:name=".TelaAuxEditaObs" />
-        <activity android:name=".TelaAuxEditaLogo" />
-        <activity android:name=".TelaContatos" />
-
+        <activity android:name=".activity.TelaPrincipal" />
+        <activity android:name=".activity.TelaOcorrencias" />
+        <activity android:name=".activity.TelaOcorrenciaNewUpdate" />
+        <activity android:name=".activity.TelaOcorrenciaComentarios" />
+        <activity android:name=".activity.TelaOcorrenciaComentarioNewUpdate" />
+        <activity android:name=".activity.TelaOcorrenciaServicos" />
+        <activity android:name=".activity.TelaOcorrenciaServicoNewUpdate" />
+        <activity android:name=".activity.TelaOcorrenciaServicoComentarioNU" />
+        <activity android:name=".activity.TelaCliente" />
+        <activity android:name=".activity.TelaClientes" />
+        <activity android:name=".activity.TelaClienteInformacoes" />
+        <activity android:name=".activity.TelaClienteLocalizacao" />
+        <activity android:name=".activity.TelaClienteContato" />
+        <activity android:name=".activity.TelaClienteEmail" />
+        <activity android:name=".activity.TelaClienteTelefone" />
+        <activity android:name=".activity.TelaClienteContatoTelEmail" />
+        <activity android:name=".activity.TelaClienteContatoEndereco" />
+        <activity android:name=".activity.TelaAuxTipoOcorrencia" />
+        <activity android:name=".activity.TelaAuxListaClientes" />
+        <activity android:name=".activity.TelaAuxListaUsuarios" />
+        <activity android:name=".activity.TelaAuxListaFuncionario" />
+        <activity android:name=".activity.TelaAuxListaContato" />
+        <activity android:name=".activity.TelaAuxEditaObs" />
+        <activity android:name=".activity.TelaAuxEditaLogo" />
+        <activity android:name=".activity.TelaContatos" />
 
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -50,8 +52,13 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".TesteWS"/>
+        <activity android:name=".TesteWS" />
+        <activity android:name=".TestePHP" />
+        <activity android:name=".JsonTesteLista" />
+        <activity android:name=".JsonDiplayListView" />
+        <activity android:name=".JsonTesteInsertView" />
+        <activity android:name=".JsonAddInfo" />
+        <activity android:name=".activity.TelaLoginNovoUsuario"/>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

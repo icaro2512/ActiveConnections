@@ -9,6 +9,18 @@ public class Usuario {
     private Fisica fis;
     private Empresa emp;
     private UsuarioFuncao usf;
+    private Integer usuIdade;
+
+    public Usuario() {
+
+    }
+
+    public Usuario(int usuId, String usuApelido, int usuIdade) {
+        this.usuId = usuId;
+        this.usuApelido = usuApelido;
+        this.usuIdade = usuIdade;
+
+    }
 
     public Integer getUsuId() {
         return usuId;
@@ -64,5 +76,13 @@ public class Usuario {
 
     public void setUsf(UsuarioFuncao usf) {
         this.usf = usf;
+    }
+
+    public Integer getUsuIdade() {
+        return usuIdade;
+    }
+
+    public void setUsuIdade(Integer usuIdade) {
+        this.usuIdade = usuIdade;
     }
 }
