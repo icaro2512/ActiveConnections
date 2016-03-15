@@ -62,10 +62,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Nome:"
                 android:ems="10"
                 android:id="@+id/tClientNome"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:hint="Nome" />
 
             <EditText
                 android:layout_width="match_parent"

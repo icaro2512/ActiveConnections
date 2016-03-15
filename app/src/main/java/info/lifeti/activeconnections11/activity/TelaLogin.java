@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import info.lifeti.activeconnections11.AsyncPHP;
+import info.lifeti.activeconnections11.JsonSpinnerVolley;
 import info.lifeti.activeconnections11.JsonTesteLista;
 import info.lifeti.activeconnections11.R;
 import info.lifeti.activeconnections11.TestePHP;
@@ -72,6 +73,12 @@ public class TelaLogin extends AppCompatActivity {
     public void testeJSON(View v) {
         final Context context = this;
         Intent it = new Intent(context, JsonTesteLista.class);
+        startActivity(it);
+    }
+
+    public void testeJSONVolley(View v) {
+        final Context context = this;
+        Intent it = new Intent(context, JsonSpinnerVolley.class);
         startActivity(it);
     }
 

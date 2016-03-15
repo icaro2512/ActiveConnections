@@ -3,7 +3,8 @@
     package="info.lifeti.activeconnections11">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -58,7 +59,8 @@
         <activity android:name=".JsonDiplayListView" />
         <activity android:name=".JsonTesteInsertView" />
         <activity android:name=".JsonAddInfo" />
-        <activity android:name=".activity.TelaLoginNovoUsuario"/>
+        <activity android:name=".activity.TelaLoginNovoUsuario" />
+        <activity android:name=".JsonSpinnerVolley"></activity>
     </application>
 
 </manifest>

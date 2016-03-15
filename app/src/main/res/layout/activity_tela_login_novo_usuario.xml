@@ -31,7 +31,6 @@
             android:id="@+id/eUsuApelido"
             android:inputType="textPersonName"
             android:ems="10"
-            android:layout_marginTop="35dp"
             android:hint="Apelido..." />
 
         <EditText
@@ -40,7 +39,6 @@
             android:id="@+id/eUsuLogin"
             android:inputType="textPersonName"
             android:ems="10"
-            android:layout_marginTop="35dp"
             android:hint="Login..." />
 
         <EditText
@@ -49,8 +47,15 @@
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/eUsuSenha"
-            android:layout_marginTop="35dp"
             android:hint="Senha..." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tListarUsuariosVolley"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
 
     </LinearLayout>
 

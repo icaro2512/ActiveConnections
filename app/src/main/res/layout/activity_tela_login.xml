@@ -29,24 +29,45 @@
             android:layout_height="wrap_content"
             android:hint="Usuário..."
             android:id="@+id/eUsuario"
-            android:inputType="text"
-            android:layout_marginTop="15dp" />
+            android:inputType="text" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/eSenha"
             android:inputType="textPassword"
-            android:layout_marginTop="50dp"
             android:hint="Senha..." />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPINNER (JS e VLLY)"
+                android:id="@+id/button4"
+                android:onClick="testeJSONVolley"
+                android:layout_gravity="center_horizontal"
+                android:enabled="true"
+                android:visibility="visible"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELETE (JS e VLLY)"
+                android:id="@+id/button6"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="JSON"
             android:id="@+id/button5"
-            android:onClick="testeJSON"
-            android:layout_gravity="right" />
+            android:onClick="testeJSON" />
 
     </LinearLayout>
 
@@ -70,7 +91,7 @@
             android:text="@string/bEntrar2"
             android:id="@+id/bEntrar"
             android:layout_weight="1"
-            android:onClick="login"
+            android:onClick="logar"
             />
 
         <Button
