@@ -65,25 +65,25 @@
                 android:ems="10"
                 android:id="@+id/tClientNome"
                 android:layout_gravity="center_horizontal"
-                android:hint="Nome" />
+                android:hint="Nome Fantasia:" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Empresa:"
                 android:ems="10"
                 android:id="@+id/tClientEmp"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:hint="Razão Social:" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:text="CNPJ:"
                 android:ems="10"
                 android:id="@+id/tClientCnpj"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:hint="CNPJ:" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -99,9 +99,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:text="IE:"
                         android:ems="10"
-                        android:id="@+id/tClientIE" />
+                        android:id="@+id/tClientIE"
+                        android:hint="IE:" />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -109,13 +109,13 @@
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/tClientDTFund"
-                        android:text="Dt. Fund:" />
+                        android:hint="Dt. Fund:" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/tClientRamo"
-                        android:text="ramo:" />
+                        android:hint="ramo:" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -127,9 +127,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:text="IM:"
                         android:ems="10"
-                        android:id="@+id/tClientIM" />
+                        android:id="@+id/tClientIM"
+                        android:hint="IM:" />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -137,13 +137,13 @@
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/tClientCMIbge"
-                        android:text="Cod Mun IBGE:" />
+                        android:hint="Cod Mun IBGE:" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/tClientEquad"
-                        android:text="enquadramento:" />
+                        android:hint="enquadramento:" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -157,7 +157,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/tClientObs"
-                    android:text="Observações:"/>
+                    android:hint="Observações:" />
 
                 <Spinner
                     android:layout_width="match_parent"
@@ -184,6 +184,7 @@
             android:layout_height="wrap_content"
             android:text="@string/bSalvar"
             android:id="@+id/button"
+            android:onClick="salvarInfoCliente"
             android:layout_gravity="left|right" />
 
         <Button
