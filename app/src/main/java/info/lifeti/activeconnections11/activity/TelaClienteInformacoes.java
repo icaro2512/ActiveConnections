@@ -8,6 +8,7 @@ import info.lifeti.activeconnections11.R;
 
 public class TelaClienteInformacoes extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,4 +18,6 @@ public class TelaClienteInformacoes extends AppCompatActivity {
     public void closeInfo(View v) {
         finish();
     }
+
+
 }
