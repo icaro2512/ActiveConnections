@@ -36,7 +36,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_gravity="left">
 
         <TextView
             android:layout_width="wrap_content"
@@ -133,12 +134,12 @@
             android:text="Complemento:" />
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="118dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/etCEndNmr"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|left"
             android:text="Nr:" />
 
     </LinearLayout>
