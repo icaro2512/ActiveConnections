@@ -5,7 +5,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 import info.lifeti.activeconnections11.Model.Bairro;
 import info.lifeti.activeconnections11.Model.Cep;
@@ -19,21 +22,57 @@ import info.lifeti.activeconnections11.Model.PessoaEndereco;
 import info.lifeti.activeconnections11.R;
 
 public class TelaClienteLocalizacao extends AppCompatActivity {
-    EditText cepnmr,cepEnd;
+    EditText etCEndCepNumero,etCEndRef,etCEndNmr,etCEndEndereco,etCEndComp,etCEndBairro,etCEndCidade,etCEndUf,etCEndPais;
+    TextView tCEndId,tCEndNomeFantasia;
+    Spinner sCEndStatus;
+    Button bClientSalvar,bClientSair;
     Cliente CLIENTE;
     Integer STATUS;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cliente_localizacao);
 
         STATUS = (Integer)getIntent().getSerializableExtra("STATUS");
-        CLIENTE = (Cliente)getIntent().getSerializableExtra("CLIENTE");
+        if (STATUS >= 1) {
+            CLIENTE = (Cliente)getIntent().getSerializableExtra("CLIENTE");
+        }
 
-        cepnmr = (EditText) findViewById(R.id.tCEndCep);
-        cepEnd = (EditText) findViewById(R.id.etCEndRua);
+        //Importando EditText
+        etCEndCepNumero = (EditText) findViewById(R.id.etCEndCepNumero);
+        etCEndRef = (EditText) findViewById(R.id.etCEndRef);
+        etCEndNmr = (EditText) findViewById(R.id.etCEndNmr);
+        etCEndEndereco = (EditText) findViewById(R.id.etCEndEndereco);
+        etCEndComp = (EditText) findViewById(R.id.etCEndComp);
+        etCEndBairro = (EditText) findViewById(R.id.etCEndBairro);
+        etCEndCidade = (EditText) findViewById(R.id.etCEndCidade);
+        etCEndUf = (EditText) findViewById(R.id.etCEndUf);
+        etCEndPais = (EditText) findViewById(R.id.etCEndPais);
+
+        //Importando TextView
+        tCEndId = (TextView) findViewById(R.id.tCEndId);
+        tCEndNomeFantasia = (TextView) findViewById(R.id.tCEndNomeFantasia);
+        //Importando Spinner
+        sCEndStatus = (Spinner) findViewById(R.id.sCEndStatus);
+        //Importando Button
+        bClientSalvar = (Button) findViewById(R.id.bClientSalvar);
+        bClientSair = (Button) findViewById(R.id.bClientSair);
+
     }
     public void salvarClientLocalizacao() {
+        if (armazenarEndereco()) {
+            Intent it = new Intent(this, TelaCliente.class);
+            it.putExtra("STATUS",2);
+            it.putExtra("STATUS",CLIENTE);
+            finish();
+        }
+
+
+
+    }
+
+    public Boolean armazenarEndereco() {
         CLIENTE.getJur().getPes().setpEnd(new PessoaEndereco());
         CLIENTE.getJur().getPes().getpEnd().setEnd(new Endereco());
         CLIENTE.getJur().getPes().getpEnd().getEnd().setCep(new Cep());
@@ -42,17 +81,9 @@ public class TelaClienteLocalizacao extends AppCompatActivity {
         CLIENTE.getJur().getPes().getpEnd().getEnd().getCep().getBai().getCid().setEst(new Estado());
         CLIENTE.getJur().getPes().getpEnd().getEnd().getCep().getBai().getCid().getEst().setPai(new Pais());
 
-        CLIENTE.getJur().getPes().getpEnd().getEnd().getCep().setCepNumero(cepnmr.getText().toString());
-        CLIENTE.getJur().getPes().getpEnd().getEnd().getCep().setCepEndereco(cepEnd.getText().toString());
-
-        //pEnd.getEnd().getCep().getBai().setBaiNome();
-
-        Intent it = new Intent(this, TelaCliente.class);
-        it.putExtra("STATUS",2);
-        it.putExtra("STATUS",CLIENTE);
-        finish();
-
+        return true;
     }
+
     public void closeEnde(View v) {
 
         Intent it = new Intent(this, TelaCliente.class);

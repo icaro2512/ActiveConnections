@@ -104,9 +104,10 @@
                     android:id="@+id/button3"
                     android:layout_gravity="right"
                     android:layout_marginRight="5dp"
-                    android:onClick="contatoEdit"/>
+                    android:onClick="contatoEdit" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -159,7 +160,7 @@
                     android:id="@+id/bCConEdt"
                     android:layout_gravity="right"
                     android:layout_marginRight="5dp"
-                    android:onClick="contatoEdit"/>
+                    android:onClick="contatoEdit" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -178,6 +179,6 @@
             android:text="@string/bSair"
             android:id="@+id/bCContSair"
             android:layout_gravity="bottom|right"
-            android:onClick="closeClientCont"/>
+            android:onClick="closeClientCont" />
     </LinearLayout>
 </LinearLayout>

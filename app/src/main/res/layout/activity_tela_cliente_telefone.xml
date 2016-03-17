@@ -58,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinner5" />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -71,8 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp">
-            </ListView>
+                android:layout_margin="5dp"></ListView>
         </LinearLayout>
     </LinearLayout>
 
@@ -136,6 +136,6 @@
             android:text="@string/bSair"
             android:id="@+id/bClientSair"
             android:layout_gravity="bottom|right"
-            android:onClick="closeTel"/>
+            android:onClick="closeTel" />
     </LinearLayout>
 </LinearLayout>

@@ -9,7 +9,7 @@ public class Pessoa implements Serializable {
     private String pesDtSaida;
     private String pesDtHrVolta;
     private Usuario usu;
-    private PessoaEndereco pEnd;
+    private PessoaEndereco pEnd; //Utilizado para Endereço de Cadastro Inicial
 
     public Pessoa(){
     }

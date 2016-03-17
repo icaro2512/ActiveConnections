@@ -57,7 +57,6 @@
             android:layout_margin="5dp">
 
 
-
         </ListView>
 
 
@@ -77,15 +76,14 @@
             android:layout_height="wrap_content"
             android:text="@string/bSair"
             android:id="@+id/bOcoSair"
-            android:layout_gravity="right"
-            />
+            android:layout_gravity="right" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bNewUpdateOco"
             android:id="@+id/bNewUpdateOco"
-            android:onClick="newUpdateOcorrencia"/>
+            android:onClick="newUpdateOcorrencia" />
 
     </LinearLayout>
 

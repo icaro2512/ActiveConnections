@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:text="REGISTRAR"
             android:id="@+id/bRegistrar"
-            android:onClick="userReg"/>
+            android:onClick="userReg" />
     </LinearLayout>
 
 </LinearLayout>

@@ -20,7 +20,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 
-public class AsyncPHP extends AsyncTask<String,Void,String> {
+public class AsyncPHP extends AsyncTask<String, Void, String> {
     AlertDialog alertDialog;
     Context ctx;
 
@@ -165,8 +165,8 @@ public class AsyncPHP extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPostExecute(String result) {
-        if(result.equals("Registro feito com sucesso!")) {
-            Toast.makeText(ctx,result,Toast.LENGTH_LONG).show();
+        if (result.equals("Registro feito com sucesso!")) {
+            Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
         } else {
             alertDialog.setMessage(result);
             alertDialog.show();

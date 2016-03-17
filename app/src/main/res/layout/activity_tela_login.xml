@@ -91,16 +91,14 @@
             android:text="@string/bEntrar2"
             android:id="@+id/bEntrar"
             android:layout_weight="1"
-            android:onClick="logar"
-            />
+            android:onClick="logar" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/bNovo"
             android:id="@+id/bNovo"
-            android:onClick="addUsuario"
-            />
+            android:onClick="addUsuario" />
 
     </LinearLayout>
 

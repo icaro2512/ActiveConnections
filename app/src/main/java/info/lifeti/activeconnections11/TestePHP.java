@@ -7,17 +7,17 @@ import android.widget.EditText;
 
 public class TestePHP extends AppCompatActivity {
 
-    EditText ET_NAME,ET_USER_NAME,ET_USER_PASS;
-    String name,user_name,user_pass;
+    EditText ET_NAME, ET_USER_NAME, ET_USER_PASS;
+    String name, user_name, user_pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teste_php);
 
-        ET_NAME = (EditText)findViewById(R.id.name);
-        ET_USER_NAME = (EditText)findViewById(R.id.new_user_name);
-        ET_USER_PASS = (EditText)findViewById(R.id.new_user_pass);
+        ET_NAME = (EditText) findViewById(R.id.name);
+        ET_USER_NAME = (EditText) findViewById(R.id.new_user_name);
+        ET_USER_PASS = (EditText) findViewById(R.id.new_user_pass);
 
 
     }
@@ -30,13 +30,11 @@ public class TestePHP extends AppCompatActivity {
 
         String method = "register";
         AsyncPHP bgTask = new AsyncPHP(this);
-        bgTask.execute(method,name,user_name,user_pass);
+        bgTask.execute(method, name, user_name, user_pass);
         finish();
 
 
     }
-
-
 
 
 }

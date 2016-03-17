@@ -64,7 +64,7 @@
             android:text="@string/bInfo"
             android:id="@+id/bClientInfo"
             android:layout_gravity="center_horizontal"
-            android:onClick="clientInfos"/>
+            android:onClick="clientInfos" />
 
         <Button
             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
             android:text="@string/bEnds"
             android:id="@+id/bClientEnd"
             android:layout_gravity="center_horizontal"
-            android:onClick="clientEnde"/>
+            android:onClick="clientEnde" />
 
         <Button
             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
             android:text="@string/bEmails"
             android:id="@+id/bClientEmail"
             android:layout_gravity="center_horizontal"
-            android:onClick="clientEmail"/>
+            android:onClick="clientEmail" />
 
         <Button
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:text="@string/bTels"
             android:id="@+id/bClientTel"
             android:layout_gravity="center_horizontal"
-            android:onClick="clientTel"/>
+            android:onClick="clientTel" />
 
         <Button
             android:layout_width="match_parent"
@@ -96,7 +96,7 @@
             android:text="@string/bCont"
             android:id="@+id/bClientCont"
             android:layout_gravity="center_horizontal"
-            android:onClick="clientCont"/>
+            android:onClick="clientCont" />
     </LinearLayout>
 
     <LinearLayout
@@ -113,7 +113,7 @@
             android:text="@string/bSair"
             android:id="@+id/bClientSair"
             android:layout_gravity="bottom|right"
-            android:onClick="backToClients"/>
+            android:onClick="backToClients" />
     </LinearLayout>
 
 </LinearLayout>

@@ -10,14 +10,10 @@ public class JsonTesteLista extends Activity {
     TextView tListarUsuarios;
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_json_teste_lista);
-
 
 
     }

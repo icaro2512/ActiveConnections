@@ -61,6 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/sCEditTelEmail" />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -74,8 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_margin="5dp">
-            </ListView>
+                android:layout_margin="5dp"></ListView>
         </LinearLayout>
     </LinearLayout>
 
@@ -139,7 +139,7 @@
             android:text="@string/bSair"
             android:id="@+id/bCCEditSair"
             android:layout_gravity="bottom|right"
-            android:onClick="closeContatoEdit"/>
+            android:onClick="closeContatoEdit" />
     </LinearLayout>
 
 </LinearLayout>

@@ -71,12 +71,11 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
         RequestQueue queue = Volley.newRequestQueue(this);
 
 
-        final String url = "http://lifeti.netau.net/prospeccao/deleteUsuario.php?usuId="+tId.getText();
+        final String url = "http://lifeti.netau.net/prospeccao/deleteUsuario.php?usuId=" + tId.getText();
 
         // prepare the Request
         JsonObjectRequest getRequest = new JsonObjectRequest(Request.Method.GET, url, null,
-                new Response.Listener<JSONObject>()
-                {
+                new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
                         // display response
@@ -97,8 +96,7 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
                         }
                     }
                 },
-                new Response.ErrorListener()
-                {
+                new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Log.d("Error.Response", error.toString());
@@ -110,7 +108,7 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
         queue.add(getRequest);
     }
 
-    private void getData(){
+    private void getData() {
         //Creating a string request
         StringRequest stringRequest = new StringRequest(Config.DATA_URL,
                 new Response.Listener<String>() {
@@ -145,9 +143,9 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
         requestQueue.add(stringRequest);
     }
 
-    private void getUsuarios(JSONArray j){
+    private void getUsuarios(JSONArray j) {
         //Traversing through all the items in the json array
-        for(int i=0;i<j.length();i++){
+        for (int i = 0; i < j.length(); i++) {
             try {
                 //Getting json object
                 JSONObject json = j.getJSONObject(i);
@@ -165,8 +163,8 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
 
 
     //Method to get student name of a particular position
-    private String getUsuarioApelido(int position){
-        String apelido="";
+    private String getUsuarioApelido(int position) {
+        String apelido = "";
         try {
             //Getting object of given index
             JSONObject json = resultado.getJSONObject(position);
@@ -181,8 +179,8 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
     }
 
     //Method to get student name of a particular position
-    private String getUsuarioId(int position){
-        String id="";
+    private String getUsuarioId(int position) {
+        String id = "";
         try {
             //Getting object of given index
             JSONObject json = resultado.getJSONObject(position);
@@ -197,8 +195,8 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
     }
 
     //Doing the same with this method as we did with getName()
-    private String getUsuarioLogin(int position){
-        String login="";
+    private String getUsuarioLogin(int position) {
+        String login = "";
         try {
             JSONObject json = resultado.getJSONObject(position);
             login = json.getString(Config.TAG_USULOGIN);
@@ -209,8 +207,8 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
     }
 
     //Doing the same with this method as we did with getName()
-    private String getUsuarioSenha(int position){
-        String senha="";
+    private String getUsuarioSenha(int position) {
+        String senha = "";
         try {
             JSONObject json = resultado.getJSONObject(position);
             senha = json.getString(Config.TAG_USUSENHA);
@@ -219,7 +217,6 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
         }
         return senha;
     }
-
 
 
     @Override

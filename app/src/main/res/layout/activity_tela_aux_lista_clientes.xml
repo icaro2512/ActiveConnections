@@ -22,6 +22,7 @@
             android:text="Lista: Clientes"
             android:id="@+id/textView3" />
     </LinearLayout>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -35,8 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_margin="5dp">
-        </ListView>
+            android:layout_margin="5dp"></ListView>
     </LinearLayout>
 
     <LinearLayout
@@ -60,8 +60,7 @@
             android:layout_height="wrap_content"
             android:text="@string/bSair"
             android:id="@+id/bAuxCltSair"
-            android:layout_gravity="right"
-            />
+            android:layout_gravity="right" />
 
     </LinearLayout>
 </LinearLayout>

@@ -19,8 +19,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class JsonAddInfo extends AppCompatActivity {
-    EditText eName,eEmail,eTelefone;
-    String name,email,telefone;
+    EditText eName, eEmail, eTelefone;
+    String name, email, telefone;
 
 
     @Override
@@ -37,12 +37,12 @@ public class JsonAddInfo extends AppCompatActivity {
         email = eEmail.getText().toString();
         telefone = eTelefone.getText().toString();
         BackgroundTask backgroundTask = new BackgroundTask();
-        backgroundTask.execute(name,email,telefone);
+        backgroundTask.execute(name, email, telefone);
         finish();
 
     }
 
-    class BackgroundTask extends AsyncTask<String,Void,String> {
+    class BackgroundTask extends AsyncTask<String, Void, String> {
 
         String add_info_url;
 
@@ -54,7 +54,7 @@ public class JsonAddInfo extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... args) {
-            String name,email,telefone;
+            String name, email, telefone;
             name = args[0];
             email = args[1];
             telefone = args[2];
@@ -64,10 +64,10 @@ public class JsonAddInfo extends AppCompatActivity {
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
-                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-                String data_stirng = URLEncoder.encode("name","UTF-8")+"="+URLEncoder.encode(name,"UTF-8")+"&"+
-                        URLEncoder.encode("email","UTF-8")+"="+URLEncoder.encode(email,"UTF-8")+"&"+
-                        URLEncoder.encode("telefone","UTF-8")+"="+URLEncoder.encode(telefone,"UTF-8");
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                String data_stirng = URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
+                        URLEncoder.encode("email", "UTF-8") + "=" + URLEncoder.encode(email, "UTF-8") + "&" +
+                        URLEncoder.encode("telefone", "UTF-8") + "=" + URLEncoder.encode(telefone, "UTF-8");
                 bufferedWriter.write(data_stirng);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -94,7 +94,7 @@ public class JsonAddInfo extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
         }
 
 

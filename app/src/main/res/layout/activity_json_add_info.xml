@@ -51,6 +51,6 @@
             android:layout_height="wrap_content"
             android:text="SAVE DATA"
             android:id="@+id/bAddInfo"
-            android:onClick="saveInfo"/>
+            android:onClick="saveInfo" />
     </LinearLayout>
 </LinearLayout>

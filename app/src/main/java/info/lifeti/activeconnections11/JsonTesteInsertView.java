@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class JsonTesteInsertView extends AppCompatActivity {
-    Button bAddContact,bViewContact;
+    Button bAddContact, bViewContact;
     TextView tJsonInsertView;
 
     @Override
@@ -35,6 +35,6 @@ public class JsonTesteInsertView extends AppCompatActivity {
 
 
     public void addContact(View view) {
-        startActivity(new Intent(this,JsonAddInfo.class));
+        startActivity(new Intent(this, JsonAddInfo.class));
     }
 }

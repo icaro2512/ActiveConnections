@@ -25,7 +25,7 @@
             android:id="@+id/bAddContact"
             android:layout_marginTop="80dp"
             android:layout_gravity="center_horizontal"
-            android:onClick="addContact"/>
+            android:onClick="addContact" />
 
         <Button
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
             android:id="@+id/bViewContact"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="70dp"
-            android:onClick="viewContact"/>
+            android:onClick="viewContact" />
     </LinearLayout>
 
     <LinearLayout
