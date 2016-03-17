@@ -59,6 +59,14 @@
                 android:enabled="true" />
 
 
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUSCAR CEP"
+                android:id="@+id/bBuscarCep"
+                android:onClick="clickBuscarCep" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,7 +124,8 @@
                 android:ems="10"
                 android:id="@+id/etCEndUf"
                 android:hint="Estado"
-                android:enabled="false" />
+                android:enabled="false"
+                android:editable="false" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -124,7 +133,9 @@
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:id="@+id/etCEndPais"
-                android:hint="Pais" />
+                android:hint="Pais"
+                android:enabled="false"
+                android:editable="false" />
 
         </LinearLayout>
     </ScrollView>
