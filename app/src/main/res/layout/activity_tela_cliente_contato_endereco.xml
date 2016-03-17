@@ -10,5 +10,6 @@
     tools:context=".activity.TelaClienteContatoEndereco"
     android:orientation="vertical">
 
+
 </LinearLayout>
 
