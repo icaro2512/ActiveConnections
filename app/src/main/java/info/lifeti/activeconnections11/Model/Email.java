@@ -1,6 +1,8 @@
 package info.lifeti.activeconnections11.Model;
 
-public class Email {
+import java.io.Serializable;
+
+public class Email implements Serializable {
     private Integer emaId;
     private String emaEmail;
 

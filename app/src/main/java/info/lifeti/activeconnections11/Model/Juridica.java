@@ -1,7 +1,9 @@
 package info.lifeti.activeconnections11.Model;
 
 
-public class Juridica {
+import java.io.Serializable;
+
+public class Juridica implements Serializable {
     private Integer jurId;
     private String jurNomeFantasia;
     private String jurRazaoSocial;
@@ -10,6 +12,11 @@ public class Juridica {
     private String jurInscricaoMunicipal;
     private Cidade cid; //Código IBGE
     private Pessoa pes;
+    private String jurDtFundacao;
+
+    public Juridica(){
+
+    }
 
     public Integer getJurId() {
         return jurId;
@@ -73,5 +80,13 @@ public class Juridica {
 
     public void setPes(Pessoa pes) {
         this.pes = pes;
+    }
+
+    public String getJurDtFundacao() {
+        return jurDtFundacao;
+    }
+
+    public void setJurDtFundacao(String jurDtFundacao) {
+        this.jurDtFundacao = jurDtFundacao;
     }
 }

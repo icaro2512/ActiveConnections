@@ -1,8 +1,5 @@
 package info.lifeti.activeconnections11;
 
-/**
- * Created by Administrador on 08/03/2016.
- */
 public class JsonContacta {
 
     private String name;

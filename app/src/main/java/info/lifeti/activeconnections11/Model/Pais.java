@@ -1,7 +1,9 @@
 package info.lifeti.activeconnections11.Model;
 
 
-public class Pais {
+import java.io.Serializable;
+
+public class Pais implements Serializable {
     private Integer paiId;
     private String paiNome;
     private String paiSigla;

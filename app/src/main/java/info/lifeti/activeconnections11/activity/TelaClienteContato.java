@@ -10,10 +10,13 @@ import info.lifeti.activeconnections11.R;
 
 public class TelaClienteContato extends AppCompatActivity {
 
+    Integer STATUS;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cliente_contato);
+
+        STATUS = (Integer)getIntent().getSerializableExtra("STATUS");
     }
 
     public void contatoEdit(View v) {
@@ -23,6 +26,10 @@ public class TelaClienteContato extends AppCompatActivity {
     }
 
     public void closeClientCont(View v) {
+
+        Intent it = new Intent(this, TelaCliente.class);
+        it.putExtra("STATUS", STATUS);
+        startActivity(it);
         finish();
     }
 }

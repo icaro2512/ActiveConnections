@@ -1,7 +1,9 @@
 package info.lifeti.activeconnections11.Model;
 
 
-public class OcorrenciaTipo {
+import java.io.Serializable;
+
+public class OcorrenciaTipo implements Serializable {
     private Integer octId;
     private String octNome;
     private Boolean octGeolocalizacao;

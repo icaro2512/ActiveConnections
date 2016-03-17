@@ -36,7 +36,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_gravity="left">
 
         <TextView
             android:layout_width="wrap_content"
@@ -50,12 +51,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:text="CEP:"
             android:ems="10"
             android:id="@+id/tCEndCep"
             android:layout_gravity="center_horizontal"
             android:elegantTextHeight="true"
-            android:singleLine="false" />
+            android:singleLine="false"
+            android:hint="CEP:" />
 
 
 
@@ -130,16 +131,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/etCEndComp"
             android:layout_gravity="center_horizontal"
-            android:text="Complemento:" />
+            android:hint="Complemento:" />
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="118dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/etCEndNmr"
-            android:layout_gravity="center_horizontal"
-            android:text="Nr:" />
+            android:layout_gravity="center_horizontal|left"
+            android:hint="Nr:" />
 
     </LinearLayout>
 
@@ -157,6 +158,7 @@
             android:layout_height="wrap_content"
             android:text="@string/bSalvar"
             android:id="@+id/bClientSalvar"
+            android:onClick="salvarClientLocalizacao"
             android:layout_gravity="left|right" />
 
         <Button

@@ -1,6 +1,8 @@
 package info.lifeti.activeconnections11.Model;
 
-public class ServicoTipo {
+import java.io.Serializable;
+
+public class ServicoTipo  implements Serializable {
     private Integer setId;
     private String setNome;
     private String setDescricao;

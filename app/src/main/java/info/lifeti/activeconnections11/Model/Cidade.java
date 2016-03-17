@@ -1,6 +1,8 @@
 package info.lifeti.activeconnections11.Model;
 
-public class Cidade {
+import java.io.Serializable;
+
+public class Cidade implements Serializable {
     private Integer cidId;
     private String cidNome;
     private String cidCodIbge;

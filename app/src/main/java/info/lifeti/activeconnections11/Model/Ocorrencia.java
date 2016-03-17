@@ -1,9 +1,10 @@
 package info.lifeti.activeconnections11.Model;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Ocorrencia {
+public class Ocorrencia implements Serializable {
     private Integer ocoId;
     private Date ocoDtHrInclusao;
     private Date ocoDtHrInicio;

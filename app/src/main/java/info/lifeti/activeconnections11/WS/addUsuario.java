@@ -16,9 +16,7 @@ import java.net.URLEncoder;
 
 import info.lifeti.activeconnections11.Model.Usuario;
 
-/**
- * Created by Administrador on 12/03/2016.
- */
+
 public class addUsuario extends AsyncTask<Usuario,Void,String> {
     String addUsuarioURL;
     Context ctx;

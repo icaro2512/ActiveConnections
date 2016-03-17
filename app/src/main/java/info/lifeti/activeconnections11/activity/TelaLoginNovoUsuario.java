@@ -17,9 +17,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import org.json.JSONObject;
 
@@ -47,21 +44,15 @@ public class TelaLoginNovoUsuario extends AppCompatActivity {
     String addUsuarioURL = "http://lifeti.netau.net/prospeccao/addUsuario.php";
     String listarUsuarioURL = "http://lifeti.netau.net/prospeccao/mostrarUsuario.php";
 
-    private GoogleApiClient client;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_login_novo_usuario);
 
-        resultado = (TextView) findViewById(R.id.tAddUsuario);
-
         eUsuApelido = (EditText) findViewById(R.id.eUsuApelido);
         eUsuLogin = (EditText) findViewById(R.id.eUsuLogin);
         eUsuSenha = (EditText) findViewById(R.id.eUsuSenha);
-
-        resultado.getText();
 
        
         ctx = this;

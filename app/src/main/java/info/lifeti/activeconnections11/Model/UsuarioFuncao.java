@@ -1,7 +1,9 @@
 package info.lifeti.activeconnections11.Model;
 
 
-public class UsuarioFuncao {
+import java.io.Serializable;
+
+public class UsuarioFuncao implements Serializable {
     private Integer usfId;
     private String usfNome;
     private String usfDescricao;

@@ -70,6 +70,7 @@ public class JsonSpinnerVolley extends AppCompatActivity implements Spinner.OnIt
     public void deleteUsuario(View view) {
         RequestQueue queue = Volley.newRequestQueue(this);
 
+
         final String url = "http://lifeti.netau.net/prospeccao/deleteUsuario.php?usuId="+tId.getText();
 
         // prepare the Request

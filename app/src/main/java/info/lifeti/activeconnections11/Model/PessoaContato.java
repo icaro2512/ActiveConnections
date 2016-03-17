@@ -1,7 +1,9 @@
 package info.lifeti.activeconnections11.Model;
 
 
-public class PessoaContato {
+import java.io.Serializable;
+
+public class PessoaContato implements Serializable {
     private Pessoa pes1;
     private Pessoa pes2;
     private String peeStatus;

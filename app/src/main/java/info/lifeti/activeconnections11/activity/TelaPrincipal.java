@@ -29,11 +29,13 @@ public class TelaPrincipal extends AppCompatActivity {
         final Context context = this;
         Intent it = new Intent(context, TelaOcorrencias.class);
         startActivity(it);
+        finish();
     }
 
     public void cliente(View v) {
         final Context context = this;
         Intent it = new Intent(context, TelaClientes.class);
         startActivity(it);
+        finish();
     }
 }

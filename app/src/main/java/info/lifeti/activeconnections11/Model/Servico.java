@@ -1,9 +1,10 @@
 package info.lifeti.activeconnections11.Model;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Servico {
+public class Servico implements Serializable {
     private Integer serId;
     private String serNome;
     private String serDescricao;

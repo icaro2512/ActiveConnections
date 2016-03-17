@@ -1,7 +1,9 @@
 package info.lifeti.activeconnections11.Model;
 
 
-public class Empresa {
+import java.io.Serializable;
+
+public class Empresa implements Serializable {
     private Integer empId;
     private String empDescricao;
     private Juridica jur;

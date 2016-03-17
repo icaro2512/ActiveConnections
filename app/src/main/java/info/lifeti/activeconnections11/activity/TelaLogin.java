@@ -56,6 +56,7 @@ public class TelaLogin extends AppCompatActivity {
         final Context context = this;
         Intent it = new Intent(context, TelaPrincipal.class);
         startActivity(it);
+        finish();
     }
 
     public void testeWs(View v) {

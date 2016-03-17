@@ -1,6 +1,8 @@
 package info.lifeti.activeconnections11.Model;
 
-public class Bairro {
+import java.io.Serializable;
+
+public class Bairro implements Serializable {
     private Integer baiId;
     private String baiNome;
     private String baiAbrev;

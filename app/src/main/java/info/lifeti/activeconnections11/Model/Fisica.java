@@ -1,7 +1,9 @@
 package info.lifeti.activeconnections11.Model;
 
 
-public class Fisica {
+import java.io.Serializable;
+
+public class Fisica implements Serializable {
     private Integer fisId;
     private String fisPrimeiroNome;
     private String fisNomeMeio;

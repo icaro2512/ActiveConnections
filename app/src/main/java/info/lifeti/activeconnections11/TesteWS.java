@@ -1,13 +1,9 @@
 package info.lifeti.activeconnections11;
 
-import android.os.AsyncTask;
-import android.os.Build;
-import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import info.lifeti.activeconnections11.DAO.UsuarioDAO;
 import info.lifeti.activeconnections11.Model.Usuario;
 
 public class TesteWS extends AppCompatActivity {
@@ -25,11 +21,7 @@ public class TesteWS extends AppCompatActivity {
             StrictMode.setThreadPolicy(policy);
         }*/
 
-        UsuarioDAO dao = new UsuarioDAO();
 
-        boolean resultado = dao.inserirUsuario(new Usuario(0,"Murilo",56));
-
-        Log.d("ExemploWS", resultado + "");
 
     }
 

@@ -38,5 +38,6 @@ public class TelaOcorrencias extends AppCompatActivity implements AdapterView.On
         final Context context = this;
         Intent it = new Intent(context, TelaOcorrenciaNewUpdate.class);
         startActivity(it);
+        finish();
     }
 }

@@ -1,6 +1,8 @@
 package info.lifeti.activeconnections11.Model;
 
-public class Cep {
+import java.io.Serializable;
+
+public class Cep implements Serializable {
     private Integer cepId;
     private String cepNumero;
     private String cepEndereco;

@@ -1,6 +1,8 @@
 package info.lifeti.activeconnections11.Model;
 
-public class Endereco {
+import java.io.Serializable;
+
+public class Endereco implements Serializable {
     private Integer endId;
     private String endReferencia;
     private Integer endNum;

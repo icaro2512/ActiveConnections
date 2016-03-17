@@ -1,7 +1,9 @@
 package info.lifeti.activeconnections11.Model;
 
 
-public class Telefone {
+import java.io.Serializable;
+
+public class Telefone  implements Serializable {
     private Integer telId;
     private String telNumero;
 

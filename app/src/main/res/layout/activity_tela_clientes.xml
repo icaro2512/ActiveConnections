@@ -64,7 +64,7 @@
             android:text="@string/bAdicionarClt"
             android:id="@+id/bAdicionarClt"
             android:layout_weight="1"
-            android:onClick="clientOptions"/>
+            android:onClick="clientAdd"/>
 
         <Button
             android:layout_width="wrap_content"

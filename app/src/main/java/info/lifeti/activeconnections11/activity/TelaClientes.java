@@ -16,10 +16,12 @@ public class TelaClientes extends AppCompatActivity {
         setContentView(R.layout.activity_tela_clientes);
     }
 
-    public void clientOptions(View v) {
+    public void clientAdd(View v) {
         final Context context = this;
         Intent it = new Intent(context, TelaCliente.class);
+        it.putExtra("STATUS",0);
         startActivity(it);
+        finish();
     }
 
     public void backToLogin(View v) {// tirei pq tem botão de voltar no android ja
