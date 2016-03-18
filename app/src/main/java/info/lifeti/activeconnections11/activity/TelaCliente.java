@@ -19,6 +19,7 @@ public class TelaCliente extends AppCompatActivity {
     Button bClientTel;
     Button bClientCont;
     Button bClientInfo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,7 @@ public class TelaCliente extends AppCompatActivity {
         bClientEmail = (Button)findViewById(R.id.bClientEmail);
         bClientTel = (Button)findViewById(R.id.bClientTel);
         bClientCont = (Button)findViewById(R.id.bClientCont);
+
         if(STATUS == 0) {
             bClientEnd.setEnabled(false);
             bClientEmail.setEnabled(false);
