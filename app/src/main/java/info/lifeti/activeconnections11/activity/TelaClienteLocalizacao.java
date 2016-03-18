@@ -39,9 +39,10 @@ public class TelaClienteLocalizacao extends AppCompatActivity {
     EditText etCEndCepNumero,etCEndRef,etCEndNmr,etCEndEndereco,etCEndComp,etCEndBairro,etCEndCidade,etCEndUf,etCEndPais;
     TextView tCEndId,tCEndNomeFantasia;
     Spinner sCEndStatus;
-    Button bClientSalvar,bClientSair;
+    Button bClientSalvar,bClientSair,bBuscarCep;
     Cliente CLIENTE;
     Integer STATUS;
+    PessoaEndereco pessoaEndereco;
     //JSON Array
     JSONArray resultadoJSON;
 
@@ -74,6 +75,7 @@ public class TelaClienteLocalizacao extends AppCompatActivity {
         //Importando Button
         bClientSalvar = (Button) findViewById(R.id.bClientSalvar);
         bClientSair = (Button) findViewById(R.id.bClientSair);
+        bBuscarCep = (Button) findViewById(R.id.bBuscarCep);
 
     }
     public void salvarClientLocalizacao() {
@@ -110,12 +112,43 @@ public class TelaClienteLocalizacao extends AppCompatActivity {
     }
 
     public void clickBuscarCep(View view) {
-        if (etCEndCepNumero.getText().toString().equals("") || etCEndCepNumero.getText() == null) {
-            Toast.makeText(getApplicationContext(), "É necessário preencher o CEP.", Toast.LENGTH_SHORT).show();
-        } else {
-            buscarCep(etCEndCepNumero.getText().toString());
+        String cep = bBuscarCep.getText().toString();
+        switch (cep) {
+            case "Buscar Cep":
+                if (etCEndCepNumero.getText().toString().equals("") || etCEndCepNumero.getText() == null) {
+                    Toast.makeText(getApplicationContext(), "É necessário preencher o CEP.", Toast.LENGTH_SHORT).show();
+                } else {
+                    buscarCep(etCEndCepNumero.getText().toString());
+                    etCEndCepNumero.setEnabled(false);
+                    etCEndRef.setEnabled(true);
+                    etCEndRef.findFocus();
+                    etCEndNmr.setEnabled(true);
+                    bBuscarCep.setText("Limpar");
+                }
+                break;
+            case "Limpar":
+                limparEditText(etCEndCepNumero,etCEndRef,etCEndNmr,etCEndEndereco,etCEndComp,etCEndBairro,etCEndCidade,etCEndUf,etCEndPais);
+                constroiPessoaEndereco();
+                etCEndCepNumero.setEnabled(true);
+                etCEndRef.setEnabled(false);
+                etCEndCepNumero.findFocus();
+                etCEndNmr.setEnabled(false);
+                bBuscarCep.setText("Buscar Cep");
+                Toast.makeText(getApplicationContext(), "pessoaEndereco = "+pessoaEndereco.getEnd().getCep().getCepEndereco()+" .", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                Toast.makeText(getApplicationContext(), "Switch estado DEFAULT.", Toast.LENGTH_SHORT).show();
         }
+    }
 
+    private void constroiPessoaEndereco() {
+        pessoaEndereco = new PessoaEndereco();
+        pessoaEndereco.setEnd(new Endereco());
+        pessoaEndereco.getEnd().setCep(new Cep());
+        pessoaEndereco.getEnd().getCep().setBai(new Bairro());
+        pessoaEndereco.getEnd().getCep().getBai().setCid(new Cidade());
+        pessoaEndereco.getEnd().getCep().getBai().getCid().setEst(new Estado());
+        pessoaEndereco.getEnd().getCep().getBai().getCid().getEst().setPai(new Pais());
     }
 
     private void carregaJSONtoAndroidCep() throws JSONException {
@@ -138,13 +171,7 @@ public class TelaClienteLocalizacao extends AppCompatActivity {
         String paiNome = "paiNome";
         String paiSigla = "paiSigla";
         //Criando PessoaEndereco e seus Construtores
-        PessoaEndereco pessoaEndereco = new PessoaEndereco();
-        pessoaEndereco.setEnd(new Endereco());
-        pessoaEndereco.getEnd().setCep(new Cep());
-        pessoaEndereco.getEnd().getCep().setBai(new Bairro());
-        pessoaEndereco.getEnd().getCep().getBai().setCid(new Cidade());
-        pessoaEndereco.getEnd().getCep().getBai().getCid().setEst(new Estado());
-        pessoaEndereco.getEnd().getCep().getBai().getCid().getEst().setPai(new Pais());
+        constroiPessoaEndereco();
         //Armazenando dados no pessoaEndereco através do Web Service
         /* Dados do Model Cep */
         pessoaEndereco.getEnd().getCep().setCepId(jsonObject.getInt(cepId));
@@ -173,10 +200,7 @@ public class TelaClienteLocalizacao extends AppCompatActivity {
     }
 
     public void preencheEditText(PessoaEndereco pE) {
-        //etCEndCepNumero = (EditText) findViewById(R.id.etCEndCepNumero);
-        //etCEndRef = (EditText) findViewById(R.id.etCEndRef);
-        //etCEndNmr = (EditText) findViewById(R.id.etCEndNmr);
-        etCEndEndereco.setText(pE.getEnd().getCep().getCepEndereco());
+        etCEndEndereco.setText(pE.getEnd().getCep().getCepLogradouro()+" "+pE.getEnd().getCep().getCepEndereco());
         etCEndComp.setText(pE.getEnd().getCep().getCepComplemento());
         etCEndBairro.setText(pE.getEnd().getCep().getBai().getBaiNome());
         etCEndCidade.setText(pE.getEnd().getCep().getBai().getCid().getCidNome());
@@ -184,6 +208,13 @@ public class TelaClienteLocalizacao extends AppCompatActivity {
         etCEndPais.setText(pE.getEnd().getCep().getBai().getCid().getEst().getPai().getPaiNome());
     }
 
+    private void limparEditText(EditText... e) {
+        int i = 0;
+        while (e.length > i) {
+            e[i].setText("");
+            i++;
+        }
+    }
 
     private void buscarCep(String cep) {
         //JSON URL
